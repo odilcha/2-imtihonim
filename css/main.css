@@ -5,7 +5,7 @@
 
 body .home__body {
   position: fixed;
-  left: 63px;
+  left: 20px;
 }
 
 .container {
@@ -16,7 +16,6 @@ body .home__body {
 header {
   margin: auto;
   max-width: 1110px;
-  width: 100%;
   display: flex;
   align-items: center;
   -moz-column-gap: 95px;
@@ -88,4 +87,100 @@ header ul a:hover {
     font-size: 32px;
     line-height: 40px;
   }
+}
+
+main {
+  max-width: 1110px;
+  height: 720px;
+  margin: auto;
+  margin-top: 56px;
+  background-image: url(../img/Bitmap-main.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+}
+main .main__list {
+  max-width: 544px;
+  max-height: 355px;
+  margin-left: 190px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+main .main__list h1 {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: -2px;
+  text-align: left;
+  color: #FFFFFF;
+  margin: 0;
+}
+main .main__list p {
+  max-width: 445px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #ffffff;
+  margin: 0;
+}
+main .main__list button {
+  width: 252px;
+  padding: 25px 0 22px 0;
+  background: #1B1D23;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  justify-content: center;
+  cursor: pointer;
+  border: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #ffffff;
+  margin-top: 31px;
+}
+main .main__list button:hover {
+  background: #60636D;
+  transition: 0.5s;
+}
+main .main__list .square {
+  width: 320px;
+  height: 80px;
+  margin-top: 6px;
+  display: flex;
+  transform: translate(-270px, 87px);
+}
+@media (max-width: 1245px) {
+  main .main__list .square {
+    display: none;
+  }
+}
+main .main__list .square .square_ {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}
+main .main__list .square ._1 {
+  background: #1B1D23;
+}
+main .main__list .square ._2 {
+  background: #FFFFFF;
+}
+main .main__list .square ._2:hover {
+  background: #EEEFF4;
+  cursor: pointer;
+}
+main .main__list .square ._2 p {
+  color: #7D828F;
 }/*# sourceMappingURL=main.css.map */
