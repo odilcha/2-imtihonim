@@ -363,7 +363,14 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 200px auto 0;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media(max-width:465px){
+        margin-top: 73px;
+    }
+
 
     h3{
         color: #1B1D23;
@@ -392,6 +399,10 @@ main{
         &:hover{
             background: #60636D;
             transition: .5s;
+        }
+
+        @media(max-width:465px){
+            display: none;
         }
 
     }

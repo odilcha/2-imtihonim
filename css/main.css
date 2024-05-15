@@ -351,7 +351,14 @@ main .square ._2 p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 200px auto 0;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 465px) {
+  .see-more {
+    margin-top: 73px;
+  }
 }
 .see-more h3 {
   color: #1B1D23;
@@ -380,4 +387,9 @@ main .square ._2 p {
 .see-more button:hover {
   background: #60636D;
   transition: 0.5s;
+}
+@media (max-width: 465px) {
+  .see-more button {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
