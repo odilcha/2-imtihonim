@@ -304,6 +304,11 @@ main .square ._2 p {
   gap: 27px;
   margin-left: 190px;
 }
+@media (max-width: 565px) {
+  .small-team .small-team__list {
+    margin-left: 58px;
+  }
+}
 .small-team .small-team__list h2 {
   color: #FFF;
   font-size: 72px;
@@ -312,6 +317,12 @@ main .square ._2 p {
   line-height: 64px;
   letter-spacing: -2px;
   margin: 0;
+}
+@media (max-width: 435px) {
+  .small-team .small-team__list h2 {
+    font-size: 57px;
+    line-height: 52px;
+  }
 }
 .small-team .small-team__list button {
   width: 187px;

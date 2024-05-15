@@ -315,6 +315,10 @@ main{
         gap: 27px;
         margin-left: 190px;
 
+        @media(max-width:565px){
+            margin-left: 58px;
+        }
+
         h2{
             color: #FFF;
             font-size: 72px;
@@ -323,6 +327,11 @@ main{
             line-height: 64px; 
             letter-spacing: -2px;
             margin: 0;
+
+            @media(max-width:435px){
+                font-size: 57px;
+                line-height: 52px;
+            }
         }
         button{
             width: 187px;
