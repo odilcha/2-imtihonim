@@ -108,6 +108,16 @@ main .main__list {
   flex-direction: column;
   row-gap: 10px;
 }
+@media (max-width: 615px) {
+  main .main__list {
+    margin-left: 58px;
+  }
+}
+@media (max-width: 327px) {
+  main .main__list {
+    margin-left: 20px;
+  }
+}
 main .main__list h1 {
   font-size: 96px;
   font-weight: 700;
@@ -116,6 +126,12 @@ main .main__list h1 {
   text-align: left;
   color: #FFFFFF;
   margin: 0;
+}
+@media (max-width: 475px) {
+  main .main__list h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
 }
 main .main__list p {
   max-width: 445px;
@@ -126,7 +142,7 @@ main .main__list p {
   color: #ffffff;
   margin: 0;
 }
-main .main__list button {
+main button {
   width: 252px;
   padding: 25px 0 22px 0;
   background: #1B1D23;
@@ -143,11 +159,11 @@ main .main__list button {
   color: #ffffff;
   margin-top: 31px;
 }
-main .main__list button:hover {
+main button:hover {
   background: #60636D;
   transition: 0.5s;
 }
-main .main__list .square {
+main .square {
   width: 320px;
   height: 80px;
   margin-top: 6px;
@@ -155,11 +171,11 @@ main .main__list .square {
   transform: translate(-270px, 87px);
 }
 @media (max-width: 1245px) {
-  main .main__list .square {
+  main .square {
     display: none;
   }
 }
-main .main__list .square .square_ {
+main .square .square_ {
   width: 80px;
   height: 80px;
   display: flex;
@@ -171,16 +187,16 @@ main .main__list .square .square_ {
   font-weight: 700;
   line-height: 25px;
 }
-main .main__list .square ._1 {
+main .square ._1 {
   background: #1B1D23;
 }
-main .main__list .square ._2 {
+main .square ._2 {
   background: #FFFFFF;
 }
-main .main__list .square ._2:hover {
+main .square ._2:hover {
   background: #EEEFF4;
   cursor: pointer;
 }
-main .main__list .square ._2 p {
+main .square ._2 p {
   color: #7D828F;
 }/*# sourceMappingURL=main.css.map */
