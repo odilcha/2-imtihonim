@@ -1,1 +1,91 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+* {
+  font-family: League Spartan;
+}
+
+body .home__body {
+  position: fixed;
+  left: 63px;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+header {
+  margin: auto;
+  max-width: 1110px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 95px;
+       column-gap: 95px;
+  padding: 56px 20px 0 0;
+}
+header ul {
+  display: flex;
+  -moz-column-gap: 56px;
+       column-gap: 56px;
+  list-style: none;
+}
+header ul a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: left;
+  color: #7D828F;
+}
+header ul a:hover {
+  color: #1B1D23;
+  transition: 0.2s;
+}
+@media (max-width: 655px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header ul {
+    display: none;
+  }
+  header .btn-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 17px;
+  }
+  header .btn-menu div {
+    width: 100%;
+    height: 3px;
+    background: #1B1D23;
+  }
+  header .is-active {
+    width: 345px;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
+    right: 0px;
+    background: #EEEFF4;
+    justify-content: center;
+    row-gap: 17px;
+    padding-left: 48px;
+    margin-left: 32px;
+  }
+}
+@media (max-width: 655px) and (max-width: 430px) {
+  header .is-active {
+    width: 280px;
+  }
+}
+@media (max-width: 655px) {
+  header .is-active li a {
+    color: #1B1D23;
+    font-size: 32px;
+    line-height: 40px;
+  }
+}/*# sourceMappingURL=main.css.map */
