@@ -7,13 +7,16 @@
 body{
     .home__body{
         position:fixed;
-        left: 20px;
-    }
-}
+        left: 63px;
 
-.container{
-    max-width: 1110px;
-    margin: 0 auto;
+        @media(max-width:1250px){
+            left: 20px;
+        }
+
+        @media(max-width:555px){
+            display: none;
+        }
+    }
 }
 
 header{
@@ -213,3 +216,90 @@ main{
     }
 }
 
+.welkome{
+    max-width: 1110px;
+    height: 658px;
+    margin:108px auto 0;
+    background-image:url(../img/Bitmap-welkome.svg);
+    background-position:bottom right ;
+    background-repeat:no-repeat;
+
+    .dashboard{
+        width: 65px;
+        height: 3px;
+        background: #C8CCD8;
+        display: none;
+        margin-bottom: 150px;
+        margin-left: 33px;
+    }
+
+    @media(max-width:1000px){
+        background-image: none;
+
+    }
+    @media(max-width:555px){
+        h1{
+            display: none;
+        }
+
+        .dashboard{
+            display: table;
+        }
+    }
+
+    h1{
+        color: #EEEFF4;
+        font-size: 250px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 200px;
+        letter-spacing: -5px;
+        margin: 0;
+
+        @media(max-width:1000px){
+            font-size: 120px;
+            margin-left: 97px; 
+        }
+    }
+
+    .welkome__div{
+        display: flex;
+        max-width: 446px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 43px;
+        margin-top: -40px;
+        margin-left: 189px;
+
+        @media(max-width:1000px){
+            margin-left: 97px;
+        }
+        @media(max-width:555px){
+            margin-left: 0;
+            padding: 0 32px;
+        }
+
+        h2{
+            color: #1B1D23;
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 64px;
+            letter-spacing: -2px;
+            margin: 0;
+        }
+        .welkome__div__list{
+            color: #60636D;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; 
+        }
+    }
+}
+
+.small-team{
+    max-width: 1110px;
+    height: 560px;
+}
