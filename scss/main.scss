@@ -302,4 +302,49 @@ main{
 .small-team{
     max-width: 1110px;
     height: 560px;
+    margin: 200px auto 0;
+    background-image: url(../img/Bitmap.small-team.svg);
+    background-position: center center;
+    display: flex;
+    align-items: center;
+
+    .small-team__list{
+        width: 445px;
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+        margin-left: 190px;
+
+        h2{
+            color: #FFF;
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 64px; 
+            letter-spacing: -2px;
+            margin: 0;
+        }
+        button{
+            width: 187px;
+            height: 72px;
+            background: #1B1D23;
+            border:0;
+            margin: 0;
+            cursor: pointer;
+            display: flex;
+            align-items:center;
+            color: #FFF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 25px; 
+            justify-content: space-around;
+
+            &:hover{
+                background: #60636D;
+                transition: .5s;
+            }
+
+        }
+    }
 }
