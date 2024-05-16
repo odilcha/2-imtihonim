@@ -366,6 +366,7 @@ main .square ._2 p {
 @media (max-width: 465px) {
   .see-more {
     margin-top: 73px;
+    transform: translateX(15%);
   }
 }
 .see-more h3 {
@@ -418,6 +419,10 @@ main .square ._2 p {
 @media (max-width: 555px) {
   .section {
     margin: 0;
+    width: 311px;
+    height: 859px;
+    justify-content: center;
+    transform: translateX(15%);
   }
 }
 .section .section__ {
@@ -428,6 +433,14 @@ main .square ._2 p {
   .section .section__ {
     max-width: 573px;
     height: 240px;
+  }
+}
+@media (max-width: 555px) {
+  .section .section__ {
+    width: 311px;
+    height: 240px;
+    display: flex;
+    align-items: flex-end;
   }
 }
 .section .section__ h3 {
@@ -448,6 +461,11 @@ main .square ._2 p {
     margin-right: 16px;
   }
 }
+@media (max-width: 555px) {
+  .section .section__ h3 {
+    display: none;
+  }
+}
 .section .section__ .section__list {
   max-width: 200px;
   display: inline-flex;
@@ -463,6 +481,12 @@ main .square ._2 p {
   .section .section__ .section__list {
     margin-top: 0px;
     transform: translateY(-100px);
+  }
+}
+@media (max-width: 555px) {
+  .section .section__ .section__list {
+    transform: translateY(1px);
+    margin-bottom: 30px;
   }
 }
 .section .section__ .section__list h4 {
@@ -495,7 +519,9 @@ main .square ._2 p {
 }
 @media (max-width: 555px) {
   .section .photo__1 {
-    background-image: url();
+    background-image: url(../img/photo-mobile-1.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }
 .section .photo__2 {
