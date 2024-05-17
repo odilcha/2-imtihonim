@@ -112,6 +112,12 @@ header ul a:hover {
   background-repeat: no-repeat;
   background-position: top right;
 }
+@media (max-width: 1055px) {
+  .welkome {
+    background-image: none;
+    justify-content: center;
+  }
+}
 .welkome .dashboard {
   width: 65px;
   height: 3px;
