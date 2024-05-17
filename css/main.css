@@ -657,6 +657,11 @@ footer .footer__square .footer__list {
     margin-top: -80px;
   }
 }
+@media (max-width: 805px) {
+  footer .footer__square .footer__list {
+    background-image: none;
+  }
+}
 footer .footer__square .footer__list ul {
   width: 313px;
   display: flex;

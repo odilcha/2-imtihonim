@@ -104,7 +104,93 @@ header{
     }
 }
 
+main{
+    max-width: 1110px;
+    height: 720px;
+    margin:56px auto;
+    background-image: url(../about.img/main.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
 
+    .main__list{
+        width: 630px;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: end;
+
+        @media(max-width:700px){
+            width: 572px;
+        }
+        @media(max-width:640px){
+            width: 472px;
+        }
+
+        h1{
+            color: #EEEFF4;
+            text-align: right;
+            font-size: 250px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 200px; 
+            letter-spacing: -5px;
+            margin: 0;
+            color: #EEEFF4;
+            transform: translateY(-45%);
+
+            @media(max-width:700px){
+                color: #EEEFF4;
+                text-align: right;
+                font-size: 200px;
+                letter-spacing: -3px;
+            }
+            @media(max-width:640px){
+                font-size: 120px;
+            }
+        }
+
+        .main__square{
+            width: 446px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+
+            @media(max-width:640px){
+                padding-left: 60px;
+            }
+
+            .dash{
+                width: 65px;
+                height: 3px;
+                background: #C8CCD8;
+                transform: translateY(-27px);
+            }
+
+            h2{
+                color: #1B1D23;
+                font-size: 72px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 64px;
+                letter-spacing: -2px;
+                margin: 0;
+            }
+            p{
+                color: #60636D;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+            }
+        }
+    }
+}
 
 footer{
     max-width: 100%;
@@ -175,6 +261,9 @@ footer{
                 gap: 0;
                 width: 0;
                 margin-top: -80px;
+            }
+            @media(max-width:805px){
+                background-image: none;
             }
 
             ul{
