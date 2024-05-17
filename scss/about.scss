@@ -104,7 +104,91 @@ header{
     }
 }
 
+main{
+    margin-top: 56px;
+    section{
+        max-width: 1110px;
+        height: 720px;
+        margin: auto;
+        background-image: url(../about.img/section-img.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
 
+        .section__list{
+            width: 628px;
+            height: 503px;
+            background: #fff;
+
+            h1{
+                color: #EEEFF4;
+                text-align: right;
+                font-size: 250px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 200px;
+                letter-spacing: -5px;
+                margin: 0;
+                transform: translateY(-40%);
+
+                @media(max-width:760px){
+                    color: #EEEFF4;
+                    font-size: 120px;
+                    line-height: 200px
+                }
+
+                @media(max-width:695px){
+                    display: none;
+                }
+            }
+            .section__list__about{
+                padding-left: 182px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 55px;
+                margin-top: -30px;  
+
+                @media(max-width:695px){
+                    margin-top: 0;
+                    padding-top: 60px;
+                }
+                @media(max-width:470px){
+                    padding-left: 50px;
+                }
+
+    
+                .dashboard{
+                    width: 65px;
+                    height: 3px;
+                    background: #C8CCD8;
+                    margin: 0;
+                }
+                h3{
+                    width: 446px;
+                    color: #1B1D23;
+                    font-size: 72px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 64px; 
+                    letter-spacing: -2px;
+                    margin: 0;
+                }
+                p{
+                    color: #60636D;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px;
+                    width: 445px;
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+}
 
 .welkome{
     max-width: 1110px;
@@ -171,7 +255,6 @@ header{
 
     .leaders__about{
         width: 730px;
-        height: 861px;
         display: flex;
         flex-wrap:wrap;
         column-gap:30px;
@@ -190,7 +273,15 @@ header{
 
             img{
                 @media(max-width:360px){
-                    
+                    width: 311px;
+                    height: 284px;
+                    margin: auto;
+                }
+            }
+
+            .leader__name{
+                @media(max-width:360px){
+                    margin-left: 20px;
                 }
             }
 
