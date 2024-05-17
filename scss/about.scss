@@ -4,6 +4,7 @@
     font-family: League Spartan;
 }
 
+
 body{
     padding-left: 50px;
 
@@ -117,8 +118,12 @@ main{
         justify-content: flex-end;
         align-items: flex-end;
 
+        @media(max-width:555px){
+            background-image:url(../about.img/mobile-photo.png);
+        }
+
         .section__list{
-            width: 628px;
+            max-width: 628px;
             height: 503px;
             background: #fff;
 
@@ -149,13 +154,14 @@ main{
                 flex-direction: column;
                 row-gap: 55px;
                 margin-top: -30px;  
+                
+                @media(max-width:555px){
+                    margin-left:-15%;
+                }
 
                 @media(max-width:695px){
                     margin-top: 0;
                     padding-top: 60px;
-                }
-                @media(max-width:470px){
-                    padding-left: 50px;
                 }
 
     
@@ -164,9 +170,13 @@ main{
                     height: 3px;
                     background: #C8CCD8;
                     margin: 0;
+
+                    @media(max-width:555px){
+                        display: none;
+                    }
                 }
                 h3{
-                    width: 446px;
+                    max-width: 446px;
                     color: #1B1D23;
                     font-size: 72px;
                     font-style: normal;
@@ -174,6 +184,15 @@ main{
                     line-height: 64px; 
                     letter-spacing: -2px;
                     margin: 0;
+
+                    @media(max-width:555px){
+                        font-size: 70px;
+                        line-height: 60px;
+                    }
+                    @media(max-width:440px){
+                        font-size: 60px;
+                        line-height: 55px;
+                    }
                 }
                 p{
                     color: #60636D;
@@ -181,15 +200,24 @@ main{
                     font-style: normal;
                     font-weight: 500;
                     line-height: 24px;
-                    width: 445px;
+                    max-width: 445px;
                     margin: 0;
+
+                    @media(max-width:555px){
+                        font-size: 15px;
+                        max-width: 430px;
+                    }
+                    @media(max-width:440px){
+                        width: 311px;
+                        font-size: 15px;
+                        max-width: 430px;
+                    }
                 }
             }
         }
 
     }
 }
-
 .welkome{
     max-width: 1110px;
     margin:200px auto;
@@ -201,6 +229,9 @@ main{
 
     @media(max-width:1055px){
         background-image: none;
+    }
+    @media(max-width:695px){
+        margin-top: 0;
     }
 
     .dashboard{
@@ -254,7 +285,7 @@ main{
     }
 
     .leaders__about{
-        width: 730px;
+        max-width: 730px;
         display: flex;
         flex-wrap:wrap;
         column-gap:30px;
@@ -265,7 +296,7 @@ main{
         }
 
         .leader__img{
-            width: 350px;
+            max-width: 350px;
             height: 399px;
             display: flex;
             flex-direction: column;
@@ -433,8 +464,4 @@ footer{
             }
         }
     }
-} 
-
-
-
-
+}

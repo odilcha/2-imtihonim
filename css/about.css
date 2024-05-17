@@ -117,8 +117,13 @@ main section {
   justify-content: flex-end;
   align-items: flex-end;
 }
+@media (max-width: 555px) {
+  main section {
+    background-image: url(../about.img/mobile-photo.png);
+  }
+}
 main section .section__list {
-  width: 628px;
+  max-width: 628px;
   height: 503px;
   background: #fff;
 }
@@ -152,15 +157,15 @@ main section .section__list .section__list__about {
   row-gap: 55px;
   margin-top: -30px;
 }
+@media (max-width: 555px) {
+  main section .section__list .section__list__about {
+    margin-left: -15%;
+  }
+}
 @media (max-width: 695px) {
   main section .section__list .section__list__about {
     margin-top: 0;
     padding-top: 60px;
-  }
-}
-@media (max-width: 470px) {
-  main section .section__list .section__list__about {
-    padding-left: 50px;
   }
 }
 main section .section__list .section__list__about .dashboard {
@@ -169,8 +174,13 @@ main section .section__list .section__list__about .dashboard {
   background: #C8CCD8;
   margin: 0;
 }
+@media (max-width: 555px) {
+  main section .section__list .section__list__about .dashboard {
+    display: none;
+  }
+}
 main section .section__list .section__list__about h3 {
-  width: 446px;
+  max-width: 446px;
   color: #1B1D23;
   font-size: 72px;
   font-style: normal;
@@ -179,14 +189,39 @@ main section .section__list .section__list__about h3 {
   letter-spacing: -2px;
   margin: 0;
 }
+@media (max-width: 555px) {
+  main section .section__list .section__list__about h3 {
+    font-size: 70px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 440px) {
+  main section .section__list .section__list__about h3 {
+    font-size: 60px;
+    line-height: 55px;
+  }
+}
 main section .section__list .section__list__about p {
   color: #60636D;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  width: 445px;
+  max-width: 445px;
   margin: 0;
+}
+@media (max-width: 555px) {
+  main section .section__list .section__list__about p {
+    font-size: 15px;
+    max-width: 430px;
+  }
+}
+@media (max-width: 440px) {
+  main section .section__list .section__list__about p {
+    width: 311px;
+    font-size: 15px;
+    max-width: 430px;
+  }
 }
 
 .welkome {
@@ -201,6 +236,11 @@ main section .section__list .section__list__about p {
 @media (max-width: 1055px) {
   .welkome {
     background-image: none;
+  }
+}
+@media (max-width: 695px) {
+  .welkome {
+    margin-top: 0;
   }
 }
 .welkome .dashboard {
@@ -249,7 +289,7 @@ main section .section__list .section__list__about p {
   margin-right: 13.2%;
 }
 .leaders .leaders__about {
-  width: 730px;
+  max-width: 730px;
   display: flex;
   flex-wrap: wrap;
   -moz-column-gap: 30px;
@@ -262,7 +302,7 @@ main section .section__list .section__list__about p {
   }
 }
 .leaders .leaders__about .leader__img {
-  width: 350px;
+  max-width: 350px;
   height: 399px;
   display: flex;
   flex-direction: column;
