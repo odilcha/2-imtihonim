@@ -105,7 +105,7 @@ header ul a:hover {
 
 .welkome {
   max-width: 1110px;
-  margin: 56px auto;
+  margin: 200px auto;
   display: flex;
   flex-direction: column;
   background-image: url(../about.img/welkome.png);
@@ -115,7 +115,6 @@ header ul a:hover {
 @media (max-width: 1055px) {
   .welkome {
     background-image: none;
-    justify-content: center;
   }
 }
 .welkome .dashboard {
@@ -141,6 +140,64 @@ header ul a:hover {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+}
+
+.leaders {
+  max-width: 1110px;
+  margin: auto;
+  display: flex;
+}
+@media (max-width: 1180px) {
+  .leaders {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.leaders h2 {
+  color: #1B1D23;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -2px;
+  margin-right: 13.2%;
+}
+.leaders .leaders__about {
+  width: 730px;
+  height: 861px;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 63px;
+}
+@media (max-width: 795px) {
+  .leaders .leaders__about {
+    justify-content: center;
+  }
+}
+.leaders .leaders__about .leader__img {
+  width: 350px;
+  height: 399px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.leaders .leaders__about .leader__img h4 {
+  color: #1B1D23;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
+}
+.leaders .leaders__about .leader__img p {
+  color: #1B1D23;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
 }
 
 footer {
